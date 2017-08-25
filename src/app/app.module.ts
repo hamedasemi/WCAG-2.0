@@ -7,9 +7,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
+import { StartComponent } from './components/start/start.component';
 
 const appRoutes: Routes = [
-  // { path: 'crisis-center', component: CrisisListComponent },
+  { path: 'start', component: StartComponent },
   // { path: 'hero/:id', component: HeroDetailComponent },
   // {
   //   path: 'heroes',
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    StartComponent
   ],
   imports: [
     RouterModule.forRoot(
