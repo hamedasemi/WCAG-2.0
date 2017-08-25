@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  navList: string[] = ["nav1", "nav2", "nav3"];
+  constructor(public translate: TranslateService) {
+    this.translate.addLangs(['en', 'sv']);
+    this.translate.setDefaultLang('en');
+  }
+  changeLang(lang: string) {
+    console.log(this.translate);
+    this.translate.use(lang);
+  }
 }
