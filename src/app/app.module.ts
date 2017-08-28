@@ -13,17 +13,7 @@ import { ArticleComponent } from './components/article/article.component';
 
 const appRoutes: Routes = [
   { path: 'start', component: StartComponent },
-  // { path: 'hero/:id', component: HeroDetailComponent },
-  // {
-  //   path: 'heroes',
-  //   component: HeroListComponent,
-  //   data: { title: 'Heroes List' }
-  // },
-  // {
-  //   path: '',
-  //   redirectTo: '/heroes',
-  //   pathMatch: 'full'
-  // },
+  { path: 'article/:section/:subsection', component: ArticleComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
