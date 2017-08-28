@@ -17,5 +17,8 @@
     "NAVIGATION_LIST_UNDERSTANDABLE_INPUT_ASSISTANCE" : "Input Assistance",
 
     "NAVIGATION_LIST_ROBUST" : "Robust",
-    "NAVIGATION_LIST_ROBUST_COMPATIBLE" : "Compatible"
+    "NAVIGATION_LIST_ROBUST_COMPATIBLE" : "Compatible",
+
+    "CONTEXT_PERCEIVABLE_TEXT_ALTERNATIVES": "I am Perceivable, Text Alternatives",
+    "CONTEXT_PERCEIVABLE_TIME-BASED MEDIA": "I am Perceivable, Time-based Media"
 }

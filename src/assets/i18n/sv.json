@@ -17,5 +17,8 @@
     "NAVIGATION_LIST_UNDERSTANDABLE_INPUT_ASSISTANCE" : "Inmatningsstöd",
 
     "NAVIGATION_LIST_ROBUST" : "Robust",
-    "NAVIGATION_LIST_ROBUST_COMPATIBLE" : "Kompatibelt"
+    "NAVIGATION_LIST_ROBUST_COMPATIBLE" : "Kompatibelt",
+    
+    "CONTEXT_PERCEIVABLE_TEXT_ALTERNATIVES": "Jag är Perceivable, Text Alternatives",
+    "CONTEXT_PERCEIVABLE_TIME-BASED MEDIA": "Jag är Perceivable, Time-based Media"
 }
