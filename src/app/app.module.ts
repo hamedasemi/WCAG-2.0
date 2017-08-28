@@ -15,7 +15,6 @@ const appRoutes: Routes = [
   { path: '**', component: PageNotFoundComponent }
 ];
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +32,7 @@ const appRoutes: Routes = [
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: (http: HttpClient) => {
+        useFactory: function (http: HttpClient) {
           return new TranslateHttpLoader(http);
         },
         deps: [HttpClient]
