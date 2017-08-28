@@ -11,11 +11,11 @@ export class ArticleComponent implements OnInit {
   private params: Params;
   private paramsSubscription: any;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.paramsSubscription = this.route.params.subscribe(params => {
-       this.params = params;
+      this.params = params;
     });
   }
 
