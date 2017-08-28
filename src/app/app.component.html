@@ -1,15 +1,5 @@
-<app-nav [navList]="navList"></app-nav>
-<nav>
-  <a [routerLink]="['/']">    
-      {{ "HOME" | translate }}
-    </a>
-  <a [routerLink]="['/about']">
-      {{ "ABOUT" | translate }}
-    </a>
-  <a [routerLink]="['/contact']">
-      {{ "CONTACT" | translate }}
-    </a>
-</nav>
+<app-nav></app-nav>
+
 <div class="lang-bar">
   <button (click)="changeLang('en')">EN</button>
   <button (click)="changeLang('sv')">SV</button>

@@ -1,5 +1,7 @@
 {
-    "HOME" : "Hem",
-    "ABOUT" : "Om",
-    "CONTACT" : "Kontakta"
+    "NAVIGATION_START" : "Start",
+    "NAVIGATION_ABOUT" : "Om",
+    "NAVIGATION_CONTACT" : "Kontakta",
+    "PAGE_CONTENT_START": "Hmd"
+    
 }

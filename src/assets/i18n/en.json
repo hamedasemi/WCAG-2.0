@@ -1,5 +1,6 @@
 {
-    "HOME" : "Home",
-    "ABOUT" : "About",
-    "CONTACT" : "Contact"
+    "NAVIGATION_START" : "Start",
+    "NAVIGATION_ABOUT" : "About",
+    "NAVIGATION_CONTACT" : "Contact",
+    "PAGE_CONTENT_START": "Hamed"
 }

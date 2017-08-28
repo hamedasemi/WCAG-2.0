@@ -1,1 +1,5 @@
-<a *ngFor="let nav of navList" href="{{nav}}" routerLink={{nav}} routerLinkActive="selected">{{nav}}</a>
+<nav>
+    <a [routerLink]="['/start']" routerLinkActive="selected">{{ "NAVIGATION_START" | translate }}</a>
+    <a [routerLink]="['/about']" routerLinkActive="selected">{{ "NAVIGATION_ABOUT" | translate }}</a>
+    <a [routerLink]="['/contact']" routerLinkActive="selected">{{ "NAVIGATION_CONTACT" | translate }}</a>
+</nav>
