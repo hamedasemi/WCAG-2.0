@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { StartComponent } from './components/start/start.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { ArticleComponent } from './components/article/article.component';
 
 const appRoutes: Routes = [
   { path: 'start', component: StartComponent },
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     AppComponent,
     NavComponent,
     StartComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ArticleComponent
   ],
   imports: [
     RouterModule.forRoot(
