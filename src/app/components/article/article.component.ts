@@ -10,12 +10,14 @@ export class ArticleComponent implements OnInit {
 
   private params: Params;
   private paramsSubscription: any;
+  private activeArticle: string;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.paramsSubscription = this.route.params.subscribe(params => {
       this.params = params;
+      this.activeArticle = `CONTEXT_${params['section']}_${params['subsection']}`.toUpperCase().replace('-','_');
     });
   }
 
