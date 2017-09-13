@@ -1,7 +1,62 @@
-<app-nav></app-nav>
+<article #article>
+  <!-- <div class="lang-bar">
+    <button (click)="changeLang('en')">EN</button>
+    <button (click)="changeLang('sv')">SV</button>
+  </div> -->
+  <select (change)="changeLang($event)">
+    <option value="en">EN</option>
+    <option value="sv">SV</option>
+  </select>
+  <input (keyup)="search($event)" type="search" placeholder="Search">
+  <nav>
+    <ul>
+      <li>
+        <a>{{'1.TITLE' | translate}}</a>
+        <ul>
+          <li><a href="#{{'1.1.FRAGMENT' | translate}}">1.1 {{'1.1.TITLE' | translate}}</a></li>
+          <li><a href="#{{'1.2.FRAGMENT' | translate}}">1.2 {{'1.2.TITLE' | translate}}</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 
-<div class="lang-bar">
-  <button (click)="changeLang('en')">EN</button>
-  <button (click)="changeLang('sv')">SV</button>
-</div>
-<router-outlet></router-outlet>
+  <header>
+    <h1>1. {{'1.TITLE' | translate}}</h1>
+    <p>{{'1.CONTEXT' | translate}}</p>
+  </header>
+
+  <section>
+    <h3 id="{{'1.1.FRAGMENT' | translate}}">1.1 {{'1.1.TITLE' | translate}}</h3>
+    <p>{{'1.1.CONTEXT' | translate}}</p>
+    <section>
+      <h4>1.1.1 {{'1.1.1.TITLE' | translate}}</h4>
+      <span>{{'1.1.1.CATEGORY' | translate}}</span>
+      <p>{{'1.1.1.CONTEXT' | translate}}</p>
+    </section>
+  </section>
+  <section>
+    <h3 id="{{'1.2.FRAGMENT' | translate}}">1.2 {{'1.2.TITLE' | translate}}</h3>
+    <p>{{'1.2.CONTEXT' | translate}}</p>
+    <section>
+      <h4>1.2.1 {{'1.2.1.TITLE' | translate}}</h4>
+      <span>{{'1.2.1.CATEGORY' | translate}}</span>
+      <p>{{'1.2.1.CONTEXT' | translate}}</p>
+    </section>
+    <section>
+      <h4>1.2.2 {{'1.2.2.TITLE' | translate}}</h4>
+      <span>{{'1.2.2.CATEGORY' | translate}}</span>
+      <p>{{'1.2.2.CONTEXT' | translate}}</p>
+    </section>
+    <section>
+      <h4>1.2.3 {{'1.2.3.TITLE' | translate}}</h4>
+      <span>{{'1.2.3.CATEGORY' | translate}}</span>
+      <p>{{'1.2.3.CONTEXT' | translate}}</p>
+    </section>
+    <section>
+      <h4>1.2.4 {{'1.2.4.TITLE' | translate}}</h4>
+      <span>{{'1.2.4.CATEGORY' | translate}}</span>
+      <p>{{'1.2.4.CONTEXT' | translate}}</p>
+    </section>
+  </section>
+
+</article>

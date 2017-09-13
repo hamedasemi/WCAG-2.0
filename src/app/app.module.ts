@@ -44,3 +44,4 @@ export function translate (http: HttpClient) {
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

@@ -1,36 +1,41 @@
 {
-    "NAVIGATION_PERCEIVABLE" : "Möjlig att uppfatta",
-    "NAVIGATION_PERCEIVABLE_TEXT_ALTERNATIVES": "Textalternativ",
-    "NAVIGATION_PERCEIVABLE_TIME-BASED_MEDIA": "Tidsberoende media",
-    "NAVIGATION_PERCEIVABLE_ADAPTABLE": "Anpassningsbart",
-    "NAVIGATION_PERCEIVABLE_DISTINGUISHABLE": "Urskiljbart",
-
-    "NAVIGATION_OPERABLE" : "Hanterbar",
-    "NAVIGATION_OPERABLE_KEYBOARD_ACCESSIBLE" : " Tillgängligt via tangentbord",
-    "NAVIGATION_OPERABLE_ENOUGH_TIME" : "Tillräckligt med tid",
-    "NAVIGATION_OPERABLE_SEIZURES" : "Krampanfall",
-    "NAVIGATION_OPERABLE_NAVIGABLE" : "Navigerbart",
-
-    "NAVIGATION_UNDERSTANDABLE" : "Begriplig",
-    "NAVIGATION_UNDERSTANDABLE_READABLE" : "Läsbart",
-    "NAVIGATION_UNDERSTANDABLE_PREDICTABLE" : "Förutsägbart",
-    "NAVIGATION_UNDERSTANDABLE_INPUT_ASSISTANCE" : "Inmatningsstöd",
-
-    "NAVIGATION_ROBUST" : "Robust",
-    "NAVIGATION_ROBUST_COMPATIBLE" : "Kompatibelt",
-    
-    "CONTEXT_PERCEIVABLE_TEXT_ALTERNATIVES": "Jag är Perceivable, Text Alternatives",
-    "CONTEXT_PERCEIVABLE_DISTINGUISHABLE": "Jag är Perceivable, Text Alternatives",
-    "CONTEXT_PERCEIVABLE_ADAPTABLE": "Jag är Perceivable, Adaptable",
-
-    "CONTEXT_OPERABLE_KEYBOARD_ACCESSIBLE": "Jag är OPERABLE KEYBOARD_ACCESSIBLE",
-    "CONTEXT_OPERABLE_ENOUGH_TIME": "Jag är OPERABLE ENOUGH_TIME",
-    "CONTEXT_OPERABLE_SEIZURES": "Jag är OPERABLE SEIZURES",
-    "CONTEXT_OPERABLE_NAVIGABLE": "Jag är OPERABLE NAVIGABLE",
-
-    "CONTEXT_UNDERSTANDABLE_READABLE": "Jag är UNDERSTANDABLE READABLE",
-    "CONTEXT_UNDERSTANDABLE_PREDICTABLE": "Jag är UNDERSTANDABLE PREDICTABLE",
-    "CONTEXT_UNDERSTANDABLE_INPUT_ASSISTANCE": "Jag är UNDERSTANDABLE INPUT_ASSISTANCE",
-
-    "CONTEXT_ROBUST_COMPATIBLE": "Jag är ROBUST COMPATIBLE"
+    "1": {
+        "TITLE": "Möjlig att uppfatta",
+        "CONTEXT": "Information och komponenter i ett användargränssnitt måste presenteras för användare på sätt som de kan uppfatta.",
+        "1": {
+            "FRAGMENT": "text-alternatives",
+            "TITLE": "Textalternativ",
+            "CONTEXT": "Tillhandahåll alternativ i form av text till allt icke-textbaserat innehåll så att det kan konverteras till format som användarna behöver, till exempel stor stil, punktskrift, tal, symboler eller enklare språk.",
+            "1": {
+                "TITLE": "Innehåll som inte är text",
+                "CONTEXT": "Allt innehåll som inte är text, som presenteras för användaren har ett textalternativ med samma syfte, utom i de situationer som anges nedan.",
+                "CATEGORY": "A"
+            }
+        },
+        "2": {
+            "FRAGMENT": "time-based-media",
+            "TITLE": "Tidsberoende media",
+            "CONTEXT": "Tillhandahåll alternativ till tidsberoende media.",
+            "1": {
+                "TITLE": "Enbart ljud och enbart video",
+                "CONTEXT": "För förinspelat ljud (enbart) och förinspelad video (enbart) gäller följande, utom när ljudet eller videon är ett mediealternativ till text och tydligt märkt som sådant:",
+                "CATEGORY": "A"
+            },
+            "2": {
+                "TITLE": "Textbeskrivningar",
+                "CONTEXT": "Det finns textbeskrivningar till allt förinspelat ljud innehåll i synkroniserad media, utom när mediet är ett mediealternativ till text och tydligt är märkt som sådant.",
+                "CATEGORY": "A"
+            },
+            "3": {
+                "TITLE": "Ljudbeskrivning eller mediealternativ",
+                "CONTEXT": "Det finns ett alternativ till tidsberoende media eller en ljudbeskrivning av det förinspelade video innehållet i synkroniserad media, utom när mediet är ett mediealternativ till text och tydligt är märkt som sådant.",
+                "CATEGORY": "A"
+            },
+            "4": {
+                "TITLE": "Textbeskrivningar",
+                "CONTEXT": "Det finns textbeskrivningar av allt direktsänt ljudinnehåll i synkroniserad media",
+                "CATEGORY": "AA"
+            }
+        }
+    }
 }

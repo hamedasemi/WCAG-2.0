@@ -1,36 +1,41 @@
 {
-    "NAVIGATION_PERCEIVABLE" : "Perceivable",
-    "NAVIGATION_PERCEIVABLE_TEXT_ALTERNATIVES": "Text alternatives",
-    "NAVIGATION_PERCEIVABLE_TIME-BASED_MEDIA": "Time-based Media",
-    "NAVIGATION_PERCEIVABLE_ADAPTABLE": "Adaptable",
-    "NAVIGATION_PERCEIVABLE_DISTINGUISHABLE": "Distinguishable",
-
-    "NAVIGATION_OPERABLE" : "Operable",
-    "NAVIGATION_OPERABLE_KEYBOARD_ACCESSIBLE" : "Keyboard Accessible",
-    "NAVIGATION_OPERABLE_ENOUGH_TIME" : "Enough Time",
-    "NAVIGATION_OPERABLE_SEIZURES" : "Seizures",
-    "NAVIGATION_OPERABLE_NAVIGABLE" : "Navigable",
-
-    "NAVIGATION_UNDERSTANDABLE" : "Understandable",
-    "NAVIGATION_UNDERSTANDABLE_READABLE" : "Readable",
-    "NAVIGATION_UNDERSTANDABLE_PREDICTABLE" : "Predictable",
-    "NAVIGATION_UNDERSTANDABLE_INPUT_ASSISTANCE" : "Input Assistance",
-
-    "NAVIGATION_ROBUST" : "Robust",
-    "NAVIGATION_ROBUST_COMPATIBLE" : "Compatible",
-
-    "CONTEXT_PERCEIVABLE_TEXT_ALTERNATIVES": "I am Perceivable, Text Alternatives",
-    "CONTEXT_PERCEIVABLE_DISTINGUISHABLE": "I am Perceivable, Text Alternatives",
-    "CONTEXT_PERCEIVABLE_ADAPTABLE": "I am Perceivable, Adaptable",
-
-    "CONTEXT_OPERABLE_KEYBOARD_ACCESSIBLE": "I am OPERABLE KEYBOARD_ACCESSIBLE",
-    "CONTEXT_OPERABLE_ENOUGH_TIME": "I am OPERABLE ENOUGH_TIME",
-    "CONTEXT_OPERABLE_SEIZURES": "I am OPERABLE SEIZURES",
-    "CONTEXT_OPERABLE_NAVIGABLE": "I am OPERABLE NAVIGABLE",
-
-    "CONTEXT_UNDERSTANDABLE_READABLE": "I am UNDERSTANDABLE READABLE",
-    "CONTEXT_UNDERSTANDABLE_PREDICTABLE": "I am UNDERSTANDABLE PREDICTABLE",
-    "CONTEXT_UNDERSTANDABLE_INPUT_ASSISTANCE": "I am UNDERSTANDABLE INPUT_ASSISTANCE",
-
-    "CONTEXT_ROBUST_COMPATIBLE": "I am ROBUST COMPATIBLE"
+    "1": {
+        "TITLE": "Perceivable",
+        "CONTEXT": "Information and user interface components must be presentable to users in ways they can perceive.",
+        "1": {
+            "FRAGMENT": "text-alternatives",
+            "TITLE": "Text alternatives",
+            "CONTEXT": "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
+            "1": {
+                "TITLE": "Non-text content",
+                "CONTEXT": "Allt innehåll som inte är text, som presenteras för användaren har ett textalternativ med samma syfte, utom i de situationer som anges nedan.",
+                "CATEGORY": "A"
+            }
+        },
+        "2": {
+            "FRAGMENT": "time-based-media",
+            "TITLE": "Time-based Media",
+            "CONTEXT": "Provide alternatives for time-based media.",
+            "1": {
+                "TITLE": "Audio-only and Video-only",
+                "CONTEXT": "For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:",
+                "CATEGORY": "A"
+            },
+            "2": {
+                "TITLE": "Captions",
+                "CONTEXT": "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
+                "CATEGORY": "A"
+            },
+            "3": {
+                "TITLE": "Audio Description or Media Alternative",
+                "CONTEXT": "An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
+                "CATEGORY": "A"
+            },
+            "4": {
+                "TITLE": "Captions",
+                "CONTEXT": "Captions are provided for all live audio content in synchronized media",
+                "CATEGORY": "AA"
+            }
+        }
+    }
 }

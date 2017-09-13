@@ -1,0 +1,10 @@
+section {
+    padding-left: 3rem;
+    position: relative;
+}
+
+span {
+    background-color: lightgray;
+    position: absolute;
+    left: 0;
+}
