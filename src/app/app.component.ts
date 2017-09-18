@@ -9,7 +9,7 @@ import { ContentService } from './shared/content.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'app';
+  
   article: Response;
   term: string;
   language: string = 'en';
