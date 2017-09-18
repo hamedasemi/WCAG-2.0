@@ -29,7 +29,7 @@
       <h3>{{section.title}}</h3>
       <p>{{section.context}}</p>
       <section *ngFor="let subsection of section.subsections | categoryFilter:category | search:term">
-        <h2 [innerHtml]="subsection.title | hightlight:term"></h2>
+        <h4 [innerHtml]="subsection.title | hightlight:term"></h4>
         <span [innerHtml]="subsection.category"></span>
         <p [innerHtml]="subsection.context | hightlight:term"></p>
       </section>
