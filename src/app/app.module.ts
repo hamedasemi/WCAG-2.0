@@ -23,7 +23,7 @@ export function translate (http: HttpClient) {
     ArticleComponent,
     SearchPipe,
     HightlightPipe
-  ],
+  ], 
   imports: [
     BrowserModule,
     HttpClientModule,

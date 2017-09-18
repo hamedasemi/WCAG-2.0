@@ -5,9 +5,8 @@ import { HttpClient } from '@angular/common/http';
 export class ContentService {
 
 
-
   constructor(private http: HttpClient) { }
   getConetnt(lang: string) {
-    return this.http.get(`assets/i18n/content/${lang}.json`);
+    return this.http.get(`assets/content/${lang}.json`);
   }
 }

@@ -12,37 +12,31 @@ export class AppComponent implements OnInit {
   title = 'app';
   article: Response;
   term: string;
+  language: string = 'en';
 
   constructor(public translate: TranslateService, public contentService: ContentService) {
     this.translate.addLangs(['en', 'sv']);
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang(this.language);
   }
 
-  ngOnInit(){
-    this.getContent('en')
+  ngOnInit() {
+    this.getContent();
   }
 
-  changeLang(event: Event) {
-    const input = event.target as HTMLInputElement
-    this.translate.use(input.value);
-    this.getContent(input.value)
+  onChangeLanguage(event: any) {
+    this.language = event.target.value;
+    this.translate.use(this.language);
+    this.getContent();
   }
 
-  getContent(lang: string) {
-    this.contentService.getConetnt(lang).subscribe((content: Response) => {
+  getContent() {
+    this.contentService.getConetnt(this.language).subscribe((content: Response) => {
       console.log(content)
       this.article = content;
     });
   }
 
-  search(event: string) {
-    this.term = event;
-    // let search = [].slice.call(this.article.nativeElement.querySelectorAll('section')).filter((element) => {
-    //   if (!event.target.value.length || element.innerHTML.search(event.target.value) > 0) {
-    //     element.removeAttribute('hidden');
-    //   } else {
-    //     element.setAttribute('hidden', true);
-    //   }
-    // });
+  search(event: any) {
+    this.term = event.target.value;
   }
 }

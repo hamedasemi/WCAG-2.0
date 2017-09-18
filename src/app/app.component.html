@@ -1,9 +1,9 @@
 <article>
-  <select (change)="changeLang($event)">
+  <select (change)="onChangeLanguage($event)">
     <option value="en">EN</option>
     <option value="sv">SV</option>
   </select>
-  <input ngModel (ngModelChange)="search($event)" type="search" placeholder="Search">
+  <input (input)="search($event)" type="search" placeholder="{{'INTERFACES_SEARCH' | translate}}">
   <nav>
     <ul>
       <li *ngFor="let section of article">
@@ -16,7 +16,6 @@
       </li>
     </ul>
   </nav>
-
   <section *ngFor="let section of article">
     <h2>{{section.title}}</h2>
     <p>{{section.context}}</p>
@@ -30,7 +29,4 @@
       </section>
     </section>
   </section>
-
-
-
 </article>
