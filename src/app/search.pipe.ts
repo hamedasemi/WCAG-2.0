@@ -6,8 +6,7 @@ import * as Fuse from 'fuse.js'
 })
 export class SearchPipe implements PipeTransform {
 
-  transform(sections: any, term): any {
-    console.log(JSON.stringify(sections))
+  transform(sections: any, term: string): any {
     var fuse = new Fuse(sections, {
       keys: ['title', 'context']
     });

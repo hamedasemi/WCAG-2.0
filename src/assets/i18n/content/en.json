@@ -1,10 +1,12 @@
 [
     {
         "title": "Perceivable",
+        "fragment": "perceivable",
         "context": "Information and user interface components must be presentable to users in ways they can perceive.",
         "sections": [
             {
                 "title": "Text alternatives",
+                "fragment": "text-alternatives",
                 "context": "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
                 "subsections": [
                     {
@@ -16,6 +18,7 @@
             },
             {
                 "title": "Time-based Media",
+                "fragment": "time-based-media",
                 "context": "Provide alternatives for time-based media.",
                 "subsections": [
                     {

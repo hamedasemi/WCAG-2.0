@@ -7,7 +7,7 @@ export class ContentService {
 
 
   constructor(private http: HttpClient) { }
-  getConetnt(lang) {
+  getConetnt(lang: string) {
     return this.http.get(`assets/i18n/content/${lang}.json`);
   }
 }
