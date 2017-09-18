@@ -1,8 +1,4 @@
 <article>
-  <!-- <div class="lang-bar">
-    <button (click)="changeLang('en')">EN</button>
-    <button (click)="changeLang('sv')">SV</button>
-  </div> -->
   <select (change)="changeLang($event)">
     <option value="en">EN</option>
     <option value="sv">SV</option>
@@ -10,21 +6,21 @@
   <input ngModel (ngModelChange)="search($event)" type="search" placeholder="Search">
   <nav>
     <ul>
-      <li>
-        <a>{{'1.TITLE' | translate}}</a>
+      <li *ngFor="let section of article">
+        <a>{{section.title}}</a>
         <ul>
-          <li><a href="#{{'1.1.FRAGMENT' | translate}}">1.1 {{'1.1.TITLE' | translate}}</a></li>
-          <li><a href="#{{'1.2.FRAGMENT' | translate}}">1.2 {{'1.2.TITLE' | translate}}</a></li>
+          <li *ngFor="let section of section.sections">
+            <a href="#{{section.fragment}}">{{section.title}}</a>
+          </li>
         </ul>
       </li>
     </ul>
   </nav>
 
-
   <section *ngFor="let section of article">
     <h2>{{section.title}}</h2>
     <p>{{section.context}}</p>
-    <section *ngFor="let section of section.sections">
+    <section *ngFor="let section of section.sections" id="{{section.fragment}}">
       <h3>{{section.title}}</h3>
       <p>{{section.context}}</p>
       <section *ngFor="let subsection of section.subsections | search:term">
