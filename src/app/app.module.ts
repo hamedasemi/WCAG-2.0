@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { ContentService } from './shared/content.service';
 import { SearchPipe } from './shared/search.pipe';
 import { HightlightPipe } from './shared/hightlight.pipe';
+import { CategoryFilterPipe } from './shared/category-filter.pipe';
 
 export function translate (http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -19,7 +20,8 @@ export function translate (http: HttpClient) {
   declarations: [
     AppComponent,
     SearchPipe,
-    HightlightPipe
+    HightlightPipe,
+    CategoryFilterPipe
   ], 
   imports: [
     BrowserModule,

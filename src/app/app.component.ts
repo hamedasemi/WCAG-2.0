@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   
   article: Response;
   term: string;
+  category: string;
   language: string = 'en';
 
   constructor(public translate: TranslateService, public contentService: ContentService) {
@@ -27,6 +28,10 @@ export class AppComponent implements OnInit {
     this.language = event.target.value;
     this.translate.use(this.language);
     this.getContent();
+  }
+
+  onChangeCetgory(event: any) {
+    this.category = event.target.value;
   }
 
   getContent() {

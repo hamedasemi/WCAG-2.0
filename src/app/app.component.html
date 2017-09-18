@@ -3,6 +3,12 @@
     <option value="en">EN</option>
     <option value="sv">SV</option>
   </select>
+  <select (change)="onChangeCetgory($event)">
+    <option>None</option>
+    <option value="A">A</option>
+    <option value="AA">AA</option>
+    <option value="AAA">AAA</option>
+  </select>
   <input (input)="search($event)" type="search" placeholder="{{'INTERFACES_SEARCH' | translate}}">
   <nav>
     <ul>
@@ -22,7 +28,7 @@
     <section *ngFor="let section of section.sections" id="{{section.fragment}}">
       <h3>{{section.title}}</h3>
       <p>{{section.context}}</p>
-      <section *ngFor="let subsection of section.subsections | search:term">
+      <section *ngFor="let subsection of section.subsections | categoryFilter:category | search:term">
         <h2 [innerHtml]="subsection.title | hightlight:term"></h2>
         <span [innerHtml]="subsection.category"></span>
         <p [innerHtml]="subsection.context | hightlight:term"></p>

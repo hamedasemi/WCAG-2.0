@@ -2,3 +2,6 @@
 em {
     background-color: orange;
 }
+section section:empty {
+    display: none;
+}
