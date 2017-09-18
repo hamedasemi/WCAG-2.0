@@ -3,46 +3,24 @@
         "title": "Perceivable",
         "fragment": "perceivable",
         "context": "Information and user interface components must be presentable to users in ways they can perceive.",
-        "sections": [
-            {
-                "title": "Text alternatives",
-                "fragment": "text-alternatives",
-                "context": "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
-                "subsections": [
-                    {
-                        "title": "Non-text content",
-                        "context": "Allt innehåll som inte är text, som presenteras för användaren har ett textalternativ med samma syfte, utom i de situationer som anges nedan.",
-                        "category": "A"
-                    }
-                ]
-            },
-            {
-                "title": "Time-based Media",
-                "fragment": "time-based-media",
-                "context": "Provide alternatives for time-based media.",
-                "subsections": [
-                    {
-                        "title": "Audio-only and Video-only",
-                        "context": "For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:",
-                        "category": "A"
-                    },
-                    {
-                        "title": "Captions",
-                        "context": "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
-                        "category": "A"
-                    },
-                    {
-                        "title": "Audio Description or Media Alternative",
-                        "context": "An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
-                        "category": "A"
-                    },
-                    {
-                        "title": "Captions",
-                        "context": "Captions are provided for all live audio content in synchronized media",
-                        "category": "AA"
-                    }
-                ]
-            }
-        ]
+        "sections": []
+    },
+    {
+        "title": "Operable",
+        "fragment": "operable",
+        "context": "User interface components and navigation must be operable.",
+        "sections": []
+    },
+    {
+        "title": "Understandable",
+        "fragment": "understandable",
+        "context": "Information and the operation of user interface must be understandable.",
+        "sections": []
+    },
+    {
+        "title": "Robust",
+        "fragment": "robust",
+        "context": "Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.",
+        "sections": []
     }
 ]
