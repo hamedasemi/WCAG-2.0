@@ -3,24 +3,247 @@
         "title": "Perceivable",
         "fragment": "perceivable",
         "context": "Information and user interface components must be presentable to users in ways they can perceive.",
-        "sections": []
+        "sections": [
+            {
+                "title": "Text alternatives",
+                "fragment": "text-alternatives",
+                "context": "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
+                "subsections": [
+                    {
+                        "title": "Non-text content",
+                        "context": "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.",
+                        "category": ""
+                    }
+                ]
+            },
+            {
+                "title": "Time-based Media",
+                "fragment": "time-based-media",
+                "context": "Provide alternatives for time-based media.",
+                "subsections": [
+                    {
+                        "title": "Audio-only and Video-only (Prerecorded):",
+                        "context": "For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:",
+                        "category": ""
+                    }
+                ]
+            },
+            {
+                "title": "Adaptable",
+                "fragment": "adaptable",
+                "context": "Create content that can be presented in different ways (for example simpler layout) without losing information or structure.",
+                "subsections": [
+                    {
+                        "title": "",
+                        "context": "",
+                        "category": ""
+                    }
+                ]
+            },
+            {
+                "title": "Distinguishable",
+                "fragment": "distinguishable",
+                "context": "Make it easier for users to see and hear content including separating foreground from background.",
+                "subsections": [
+                    {
+                        "title": "",
+                        "context": "",
+                        "category": ""
+                    }
+                ]
+            }
+        ]
     },
     {
         "title": "Operable",
         "fragment": "operable",
         "context": "User interface components and navigation must be operable.",
-        "sections": []
+        "sections": [
+            {
+                "title": "Keyboard Accessible",
+                "fragment": "keyboard-accessible",
+                "context": "Make all functionality available from a keyboard.",
+                "subsections": [
+                    {
+                        "title": "",
+                        "context": "",
+                        "category": ""
+                    }
+                ]
+            },
+            {
+                "title": "Enough Time",
+                "fragment": "nnough-time",
+                "context": "Provide users enough time to read and use content.",
+                "subsections": [
+                    {
+                        "title": "",
+                        "context": "",
+                        "category": ""
+                    }
+                ]
+            },
+            {
+                "title": "Seizures",
+                "fragment": "seizures",
+                "context": "Do not design content in a way that is known to cause seizures.",
+                "subsections": [
+                    {
+                        "title": "",
+                        "context": "",
+                        "category": ""
+                    }
+                ]
+            },
+            {
+                "title": "Navigable",
+                "fragment": "navigable",
+                "context": "Provide ways to help users navigate, find content, and determine where they are.",
+                "subsections": [
+                    {
+                        "title": "",
+                        "context": "",
+                        "category": ""
+                    }
+                ]
+            }
+        ]
     },
     {
         "title": "Understandable",
         "fragment": "understandable",
         "context": "Information and the operation of user interface must be understandable.",
-        "sections": []
+        "sections": [
+            {
+                "title": "Readable",
+                "fragment": "readable",
+                "context": "Make text content readable and understandable.",
+                "subsections": [
+                    {
+                        "title": "1 Language of Page",
+                        "context": "The default human language of each Web page can be programmatically determined.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Language of Parts",
+                        "context": "The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Unusual Words",
+                        "context": "A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Abbreviations",
+                        "context": "A mechanism for identifying the expanded form or meaning of abbreviations is available. ",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Reading Level",
+                        "context": "When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Pronunciation",
+                        "context": "A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.",
+                        "category": "AAA"
+                    }
+                ]
+            },
+            {
+                "title": "Predictable",
+                "fragment": "predictable",
+                "context": "Make Web pages appear and operate in predictable ways.",
+                "subsections": [
+                    {
+                        "title": "On Focus",
+                        "context": "When any component receives focus, it does not initiate a change of context.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "On Input",
+                        "context": "Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Consistent Navigation",
+                        "context": "Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Consistent Identification",
+                        "context": "Components that have the same functionality within a set of Web pages are identified consistently.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Change on Request",
+                        "context": "Changes of context are initiated only by user request or a mechanism is available to turn off such changes.",
+                        "category": "AAA"
+                    }
+                ]
+            },
+            {
+                "title": "Input Assistance",
+                "fragment": "input-assistance",
+                "context": "Help users avoid and correct mistakes.",
+                "subsections": [
+                    {
+                        "title": "Error Identification",
+                        "context": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Labels or Instructions",
+                        "context": "Labels or instructions are provided when content requires user input.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Error Suggestion",
+                        "context": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Error Prevention (Legal, Financial, Data)",
+                        "context": "For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true: ",
+                        "category": "AA"
+                    }
+,                    {
+                        "title": "Help",
+                        "context": "Context-sensitive help is available.",
+                        "category": "AAA"
+                    }
+,                    {
+                        "title": "Error Prevention (All)",
+                        "context": "For Web pages that require the user to submit information, at least one of the following is true:",
+                        "category": "AAA"
+                    }
+                ]
+            }
+        ]
     },
     {
         "title": "Robust",
         "fragment": "robust",
         "context": "Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.",
-        "sections": []
+        "sections": [
+            {
+                "title": "Compatible",
+                "fragment": "compatible",
+                "context": "Maximize compatibility with current and future user agents, including assistive technologies.",
+                "subsections": [
+                    {
+                        "title": "Parsing",
+                        "context": "In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Name, Role, Value",
+                        "context": "For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.",
+                        "category": "A"
+                    }
+                ]
+            }
+        ]
     }
 ]
