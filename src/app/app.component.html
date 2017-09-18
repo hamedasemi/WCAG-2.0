@@ -1,4 +1,4 @@
-<article #article>
+<article>
   <!-- <div class="lang-bar">
     <button (click)="changeLang('en')">EN</button>
     <button (click)="changeLang('sv')">SV</button>
@@ -7,7 +7,7 @@
     <option value="en">EN</option>
     <option value="sv">SV</option>
   </select>
-  <input (keyup)="search($event)" type="search" placeholder="Search">
+  <input (input)="search($event)" type="search" placeholder="Search">
   <nav>
     <ul>
       <li>
@@ -20,43 +20,21 @@
     </ul>
   </nav>
 
-  <header>
-    <h1>1. {{'1.TITLE' | translate}}</h1>
-    <p>{{'1.CONTEXT' | translate}}</p>
-  </header>
 
-  <section>
-    <h3 id="{{'1.1.FRAGMENT' | translate}}">1.1 {{'1.1.TITLE' | translate}}</h3>
-    <p>{{'1.1.CONTEXT' | translate}}</p>
-    <section>
-      <h4>1.1.1 {{'1.1.1.TITLE' | translate}}</h4>
-      <span>{{'1.1.1.CATEGORY' | translate}}</span>
-      <p>{{'1.1.1.CONTEXT' | translate}}</p>
+  <section *ngFor="let section of article">
+    <h2>{{section.title}}</h2>
+    <p>{{section.context}}</p>
+    <section *ngFor="let section of section.sections">
+      <h3>{{section.title}}</h3>
+      <p>{{section.context}}</p>
+      <section *ngFor="let subsection of section.subsections | search:term">
+        <!-- <h4></h4>
+        <span>{{subsection.category}}</span> -->
+        <p [innerHtml]="subsection.context | hightlight:term"></p>
+      </section>
     </section>
   </section>
-  <section>
-    <h3 id="{{'1.2.FRAGMENT' | translate}}">1.2 {{'1.2.TITLE' | translate}}</h3>
-    <p>{{'1.2.CONTEXT' | translate}}</p>
-    <section>
-      <h4>1.2.1 {{'1.2.1.TITLE' | translate}}</h4>
-      <span>{{'1.2.1.CATEGORY' | translate}}</span>
-      <p>{{'1.2.1.CONTEXT' | translate}}</p>
-    </section>
-    <section>
-      <h4>1.2.2 {{'1.2.2.TITLE' | translate}}</h4>
-      <span>{{'1.2.2.CATEGORY' | translate}}</span>
-      <p>{{'1.2.2.CONTEXT' | translate}}</p>
-    </section>
-    <section>
-      <h4>1.2.3 {{'1.2.3.TITLE' | translate}}</h4>
-      <span>{{'1.2.3.CATEGORY' | translate}}</span>
-      <p>{{'1.2.3.CONTEXT' | translate}}</p>
-    </section>
-    <section>
-      <h4>1.2.4 {{'1.2.4.TITLE' | translate}}</h4>
-      <span>{{'1.2.4.CATEGORY' | translate}}</span>
-      <p>{{'1.2.4.CONTEXT' | translate}}</p>
-    </section>
-  </section>
+
+
 
 </article>

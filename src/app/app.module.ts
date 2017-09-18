@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ArticleComponent } from './components/article/article.component';
+import { ContentService } from './shared/content.service';
+import { SearchPipe } from './search.pipe';
+import { HightlightPipe } from './hightlight.pipe';
 
 const appRoutes: Routes = [
   { path: 'article/:section/:subsection', component: ArticleComponent },
@@ -23,7 +26,9 @@ export function translate (http: HttpClient) {
     AppComponent,
     NavComponent,
     PageNotFoundComponent,
-    ArticleComponent
+    ArticleComponent,
+    SearchPipe,
+    HightlightPipe
   ],
   imports: [
     RouterModule.forRoot(
@@ -40,7 +45,7 @@ export function translate (http: HttpClient) {
       }
     }),
   ],
-  providers: [],
+  providers: [ContentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
