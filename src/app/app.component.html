@@ -1,37 +1,43 @@
 <article>
-  <select (change)="onChangeLanguage($event)">
-    <option value="en">EN</option>
-    <option value="sv">SV</option>
-  </select>
-  <select (change)="onChangeCetgory($event)">
-    <option>{{'INTERFACES_NONE' | translate}}</option>
-    <option value="A">A</option>
-    <option value="AA">AA</option>
-    <option value="AAA">AAA</option>
-  </select>
-  <input (input)="search($event)" type="search" placeholder="{{'INTERFACES_SEARCH' | translate}}">
-  <nav>
-    <ul>
-      <li *ngFor="let section of article">
-        <a>{{section.title}}</a>
-        <ul>
-          <li *ngFor="let section of section.sections">
-            <a href="#{{section.fragment}}">{{section.title}}</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-  <section *ngFor="let section of article; let i = index">
-    <h2>{{i+1}}.{{section.title}}</h2>
-    <p>{{section.context}}</p>
-    <section *ngFor="let section of section.sections; let j = index" id="{{section.fragment}}">
-      <h3>{{i+1}}.{{j+1}}.{{section.title}}</h3>
+  <header>
+    <select (change)="onChangeCetgory($event)">
+      <option>{{'INTERFACES_NONE' | translate}}</option>
+      <option value="A">A</option>
+      <option value="AA">AA</option>
+      <option value="AAA">AAA</option>
+    </select>
+    <input (input)="search($event)" type="search" placeholder="{{'INTERFACES_SEARCH' | translate}}">
+    <nav>
+      <ul>
+        <li *ngFor="let section of article">
+          <a>{{section.title}}</a>
+          <ul>
+            <li *ngFor="let section of section.sections">
+              <a href="#{{section.fragment}}">{{section.title}}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <select (change)="onChangeLanguage($event)">
+      <option value="en">EN</option>
+      <option value="sv">SV</option>
+    </select>
+  </header>
+  
+  <section>
+    <section *ngFor="let section of article; let i = index">
+      <h2>{{i+1}}.{{section.title}}</h2>
       <p>{{section.context}}</p>
-      <section *ngFor="let subsection of section.subsections | categoryFilter:category | search:term; let k = index">
-        {{i+1}}.{{j+1}}.{{k+1}}.<h4 [innerHtml]="subsection.title | hightlight:term"></h4>
-        <span [innerHtml]="subsection.category"></span>
-        <p [innerHtml]="subsection.context | hightlight:term"></p>
+      <section *ngFor="let section of section.sections; let j = index" id="{{section.fragment}}">
+        <h3>{{i+1}}.{{j+1}}.{{section.title}}</h3>
+        <p>{{section.context}}</p>
+        <section *ngFor="let subsection of section.subsections | categoryFilter:category | search:term; let k = index">
+          {{i+1}}.{{j+1}}.{{k+1}}.
+          <h4 [innerHtml]="subsection.title | hightlight:term"></h4>
+          <span [innerHtml]="subsection.category"></span>
+          <p [innerHtml]="subsection.context | hightlight:term"></p>
+        </section>
       </section>
     </section>
   </section>
