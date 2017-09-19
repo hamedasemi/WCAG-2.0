@@ -1,45 +1,416 @@
 [
     {
-        "title": "SWEDSWEDSWED",
-        "fragment": "perceivable",
-        "context": "Information and user interface components must be presentable to users in ways they can perceive.",
+        "title": "Möjlig att uppfatta",
+        "fragment": "möjlig-att-uppfatta",
+        "context": "Information och komponenter i ett användargränssnitt måste presenteras för användare på sätt som de kan uppfatta.",
         "sections": [
             {
-                "title": "Text alternatives",
-                "fragment": "text-alternatives",
-                "context": "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
+                "title": "Textalternativ",
+                "fragment": "textalternativ",
+                "context": "Tillhandahåll alternativ i form av text till allt icke-textbaserat innehåll så att det kan konverteras till format som användarna behöver, till exempel stor stil, punktskrift, tal, symboler eller enklare språk.",
                 "subsections": [
                     {
-                        "title": "Non-text content",
-                        "context": "Allt innehåll som inte är text, som presenteras för användaren har ett textalternativ med samma syfte, utom i de situationer som anges nedan.",
+                        "title": "Innehåll som inte är text",
+                        "context": "Allt innehåll som inte är text, som presenteras för användaren har ett textalternativ med samma syfte, utom i de situationer som anges nedan. ",
                         "category": "A"
                     }
                 ]
             },
             {
-                "title": "Time-based Media",
-                "fragment": "time-based-media",
-                "context": "Provide alternatives for time-based media.",
+                "title": "Tidsberoende media",
+                "fragment": "tidsberoende-media",
+                "context": "Tillhandahåll alternativ till tidsberoende media.",
                 "subsections": [
                     {
-                        "title": "Audio-only and Video-only",
-                        "context": "For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:",
+                        "title": "Enbart ljud och enbart video (Förinspelad)",
+                        "context": "För förinspelat ljud (enbart) och förinspelad video (enbart) gäller följande, utom när ljudet eller videon är ett mediealternativ till text och tydligt märkt som sådant:",
                         "category": "A"
                     },
                     {
-                        "title": "Captions",
-                        "context": "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
+                        "title": "Textbeskrivningar (Förinspelade)",
+                        "context": "Det finns textbeskrivningar till allt förinspelat ljud innehåll i synkroniserad media, utom när mediet är ett mediealternativ till text och tydligt är märkt som sådant.",
                         "category": "A"
                     },
                     {
-                        "title": "Audio Description or Media Alternative",
-                        "context": "An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
+                        "title": "Ljudbeskrivning eller mediealternativ (Förinspelat)",
+                        "context": "Det finns ett alternativ till tidsberoende media eller en ljudbeskrivning av det förinspelade video innehållet i synkroniserad media, utom när mediet är ett mediealternativ till text och tydligt är märkt som sådant.",
                         "category": "A"
                     },
                     {
-                        "title": "Captions",
-                        "context": "Captions are provided for all live audio content in synchronized media",
+                        "title": "Textbeskrivningar (direktsända)",
+                        "context": "Det finns textbeskrivningar av allt direktsänt ljudinnehåll i synkroniserad media.",
                         "category": "AA"
+                    },
+                    {
+                        "title": "Ljudbeskrivning (förinspelad)",
+                        "context": "Det finns ljudbeskrivningar av allt förinspelat videoinnehåll i synkroniserad media.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Teckenspråk (förinspelat)",
+                        "context": "Det finns teckenspråksöversättningar av allt förinspelat ljud innehåll i synkroniserad media.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Utökad ljudbeskrivning (förinspelad)",
+                        "context": "Där pauser i förgrundsljudet inte räcker för att skapa en ljudbeskrivning som förmedlar meningen med videon, så finns en utökad ljudbeskrivning av allt förinspelat videoinnehåll i synkroniserad media.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Mediealternativ (förinspelat)",
+                        "context": "Det finns ett alternativ till tidsberoende media av all förinspelad synkroniserad media och för alla förinspelade videos (enbart).",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Enbart ljud (direktsänt)",
+                        "context": "Det finns ett alternativ till tidsberoende media som presenterar information motsvarande direktsänt ljudinnehåll (enbart).",
+                        "category": "AAA"
+                    }
+                ]
+            },
+            {
+                "title": "Anpassningsbart",
+                "fragment": "anpassningsbart",
+                "context": "Skapa innehåll som kan presenteras på olika sätt (exempelvis med enklare layout) utan att information eller struktur går förlorad.",
+                "subsections": [
+                    {
+                        "title": "Information och relationer",
+                        "context": "Information, struktur, och relationer som förmedlas genom presentation kan bli automatiskt tydliggjord eller finnas som text.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Meningsfull ordning",
+                        "context": "När meningen med innehållet påverkas av ordningen det presenteras i, kan en logisk läsordning bli automatiskt tydliggjord.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Sensoriska kännetecken",
+                        "context": "Instruktioner för att förstå och styra innehåll är inte enbart beroende av sensoriska kännetecken såsom form, storlek, visuell placering, orientering eller ljud.",
+                        "category": "A"
+                    }
+                ]
+            },
+            {
+                "title": "Urskiljbart",
+                "fragment": "urskiljbart",
+                "context": "Gör det enklare för användare att se och höra innehåll, bland annat genom att skilja förgrund från bakgrund.",
+                "subsections": [
+                    {
+                        "title": "Användning av färger",
+                        "context": "Färg används inte som det enda visuella sättet att förmedla information, indikera en handling, fråga om återkoppling eller särskilja ett visuellt element.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Kontroll av ljud",
+                        "context": "Om något ljud på en webbsida automatiskt spelas i mer än tre sekunder så ska det antingen finnas en metod/funktion för att pausa eller stoppa ljudet, eller en metod/funktion för att ändra ljudnivån. Denna kontroll ska vara oberoende av systemets ordinarie volymkontroll.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Kontrast (minimum)",
+                        "context": "Den visuella presentationen av text och text i form av bild har ett kontrastvärde på minst 4,5:1 med följande undantag:",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Förändring av textstorlek",
+                        "context": "Förutom för textbeskrivningar och text i form av bild, så kan text förstoras utan hjälpmedel upp till 200 procent utan att användaren förlorar innehåll eller funktionalitet.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Text i form av bild",
+                        "context": "Om den teknik som används kan skapa den visuella presentationen så ska text användas för att förmedla information hellre än text i form av bild, med följande undantag:",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Kontrast (utökad)",
+                        "context": "Den visuella presentationen av text och text i form av bild har ett kontrastvärde på minst 7:1, med följande undantag:",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Lågt eller inget bakgrundsljud",
+                        "context": "För förinspelat ljud innehåll (1) som i första hand innehåller tal i förgrunden, (2) som inte är en ljud-CAPTCHA eller en ljudlogotyp och (3) som inte i första hand är ett musikaliskt uttryck såsom sång eller rapp, gäller minst ett av följande:",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Visuell Presentation",
+                        "context": "För den visuella presentationen av textblock, finns en metod/funktion för att uppnå följande:",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Text i form av bild (utan undantag)",
+                        "context": "Text i form av bild används enbart rent dekorativt eller när en särskild presentation av text är av avgörande betydelse för informationen som förmedlas.",
+                        "category": "AAA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Hanterbar",
+        "fragment": "hanterbar",
+        "context": "Komponenter i ett användargränssnitt och navigering måste vara hanterbara.",
+        "sections": [
+            {
+                "title": "Tillgängligt via tangentbord",
+                "fragment": "tillgängligt-via-tangentbord",
+                "context": "All funktionalitet ska vara åtkomlig med ett tangentbord.",
+                "subsections": [
+                    {
+                        "title": "Tangentbord",
+                        "context": "All funktionalitet är hanterbar via ett gränssnitt för tangentbord utan att det krävs särskild timing för varje enskild tangenttryckning. Detta gäller med undantag för när den underliggande funktionaliteten kräver inmatning som är beroende av mönstret som skapas av användarens rörelser och inte bara slutpunkterna.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Ingen tangentbordsfälla",
+                        "context": "Om tangentbordsfokus kan flyttas till en komponent på webbsidan via ett gränssnitt för tangentbord så kan också fokus flyttas bort från samma komponent med hjälp av ett gränssnitt för tangentbord. Om det krävs något mer än vanliga piltangenter, tabbtangenter eller andra standardiserade avslutningsmetoder för att flytta bort fokus så ska användaren informeras om hur det går till.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Tangentbord (utan undantag)",
+                        "context": "All funktionalitet kan styras via ett gränssnitt för tangentbord utan att det krävs särskild timing för varje tangenttryckning.",
+                        "category": "AAA"
+                    }
+                ]
+            },
+            {
+                "title": "Tillräckligt med tid",
+                "fragment": "tillräckligt-med-tid",
+                "context": "Ge användaren tillräckligt med tid för att läsa och använda innehållet.",
+                "subsections": [
+                    {
+                        "title": "Justerbar tidsgräns",
+                        "context": "För varje satt tidsgräns gäller minst ett av följande:",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Paus, Stopp, Dölj",
+                        "context": "För information som rör sig, blinkar, rullar eller uppdateras automatiskt gäller samtliga punkter: ",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Inga tidsgränser",
+                        "context": "Tidsgränsen är inte en avgörande del av den händelse eller aktivitet som presenterats via innehållet, med undantag för icke-interaktiva synkroniserade medier och händelser i realtid.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Avbrott",
+                        "context": "Avbrott kan skjutas upp eller förhindras av användaren med undantag för avbrott på grund av nödfall. ",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Återautentisering",
+                        "context": "När en session som kräver autentisering löper ut, kan användaren fortsätta aktiviteten utan att förlora data, efter återautentiseringen.",
+                        "category": "AAA"
+                    }
+                ]
+            },
+            {
+                "title": "Krampanfall",
+                "fragment": "krampanfall",
+                "context": "Designa inte innehåll på ett sätt som kan orsaka krampanfall.",
+                "subsections": [
+                    {
+                        "title": "Tre flimmer eller under tröskelvärde",
+                        "context": "Webbsidor innehåller inget som flimrar mer än tre gånger under en ensekundsperiod, eller så ligger flimret under de generella tröskelvärdena för flimmer och rött flimmer.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Tre flimmer",
+                        "context": "Webbsidor innehåller inget som flimrar mer än tre gånger under en ensekundsperiod.",
+                        "category": "AAA"
+                    }
+                ]
+            },
+            {
+                "title": "Navigerbart",
+                "fragment": "navigerbart",
+                "context": "Tillhandahåll sätt att hjälpa användarna att navigera, hitta innehåll och avgöra var de är.",
+                "subsections": [
+                    {
+                        "title": "Hoppa över grupperat innehåll",
+                        "context": "En metod/funktion finns tillgänglig för att hoppa över grupperat innehåll som upprepas på flera webbsidor.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Sidans titel",
+                        "context": "Webbsidor har titlar som beskriver ämne eller syfte.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Fokusordning",
+                        "context": "Om man kan navigera stegvis på en webbsida och navigeringsordningen påverkar betydelse eller användning, så ska fokuserbara komponenter få fokus i en ordning som bevarar betydelse och användning.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Syftet med en länk (i sammanhanget)",
+                        "context": "Syftet med varje länk framgår av länktexten i sig själv eller av länktexten tillsammans med sitt automatiskt tydliggjorda länksammanhang, utom då syftet med länken skulle vara tvetydigt för användare i allmänhet. ",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Flera olika sätt",
+                        "context": "Det finns mer är ett sätt att hitta en webbsida inom en uppsättning av webbsidor, utom när webbsidan är ett resultat av eller ett steg i en process.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Rubriker och ledtexter/etiketter",
+                        "context": "Rubriker och ledtexter/etiketter beskriver ämne eller syfte.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Synligt fokus",
+                        "context": "Användargränssnitt som styrs via tangentbord har ett sätt att visa var fokus är vid tangentbordsnavigering.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Var användaren är",
+                        "context": "Det finns information om var användaren är inom en uppsättning av webbsidor. ",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Syftet med en länk (enbart länk)",
+                        "context": "Det finns en metod/funktion som gör att varje länks syfte framgår av länktexten i sig själv, utom då syftet med länken skulle vara tvetydigt för användare i allmänhet.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Avdelningsrubriker",
+                        "context": "Avdelningsrubriker används för att strukturera innehållet.",
+                        "category": "AAA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Begriplig",
+        "fragment": "begriplig",
+        "context": "Information och hantering av användargränssnitt måste vara begriplig.",
+        "sections": [
+            {
+                "title": "Läsbart",
+                "fragment": "läsbart",
+                "context": "Gör textinnehåll läsbart och begripligt.",
+                "subsections": [
+                    {
+                        "title": "Sidans språk",
+                        "context": "Det huvudsakliga mänskliga språket på varje webbsida kan tydliggöras automatiskt. ",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Språk för del av sida",
+                        "context": "Det mänskliga språket för varje avsnitt eller fras i innehållet kan automatiskt tydliggöras utom för egennamn, tekniska termer, ord av obestämbart språk och ord eller fraser som blivit en naturlig del av språket i den omgivande texten.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Ovanliga ord",
+                        "context": "Det finns en metod/funktion som visar specifika definitioner av ord och fraser som används på ett ovanligt eller begränsat sätt. Detta gäller även bildspråk och jargong.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Förkortningar",
+                        "context": "Det finns en metod/funktion som visar hela ordet/orden eller betydelsen av förkortningar.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Läsförmåga",
+                        "context": "När text kräver högre läsförmåga än högstadienivå efter att man avlägsnat egennamn och titlar, så finns det kompletterande innehåll eller en version som inte kräver högre läsförmåga än högstadienivå.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Uttal",
+                        "context": "Det finns en metod/funktion som anger hur ord uttalas, när betydelsen av ordet, i sitt sammanhang, är tvetydigt om man inte vet hur det uttalas.",
+                        "category": "AAA"
+                    }
+                ]
+            },
+            {
+                "title": "Förutsägbart",
+                "fragment": "förutsägbart",
+                "context": "Säkerställ att webbsidor presenteras och fungerar på ett förutsägbart sätt.",
+                "subsections": [
+                    {
+                        "title": "Vid fokus",
+                        "context": "Att en komponent får fokus leder inte till en förändring av sammanhanget.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Vid inmatning",
+                        "context": "Att ändra inställningarna för en komponent i ett användargränssnitt orsakar inte automatiskt en förändring av sammanhanget, om inte användaren förvarnats om detta innan komponenten används.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Konsekvent navigering",
+                        "context": "Navigeringsmetoder/funktioner som upprepas på flera webbsidor inom en uppsättning av webbsidor presenteras i samma inbördes ordning varje gång de upprepas, om inte användaren initierar en ändring.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Konsekvent identifiering",
+                        "context": "Komponenter som har samma funktionalitet inom en uppsättning av webbsidor identifieras konsekvent.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Förändring på begäran",
+                        "context": "Förändring av sammanhang initieras enbart på användarens begäran eller så finns en metod/funktion för att stänga av sådana förändringar.",
+                        "category": "AAA"
+                    }
+                ]
+            },
+            {
+                "title": "Inmatningsstöd",
+                "fragment": "inmatningsstöd",
+                "context": "Hjälp användare att undvika misstag och rätta till misstag.",
+                "subsections": [
+                    {
+                        "title": "Identifiering av fel",
+                        "context": "Om ett inmatningsfel upptäcks automatiskt så ska det som är fel markeras och felet beskrivas för användaren med text.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Ledtexter/etiketter eller instruktioner",
+                        "context": "Det finns Ledtexter/etiketter eller instruktioner när innehåll kräver inmatning från användaren.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Förslag vid felhantering",
+                        "context": "Om ett inmatningsfel upptäcks automatiskt och det finns kända korrigeringsförslag så ges förslagen till användaren, utom om det skulle äventyra säkerheten eller syftet med innehållet.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Förebyggande av fel (juridiskt, ekonomiskt, data)",
+                        "context": "För webbsidor som leder till att användare ingår rättsliga åtaganden eller utför ekonomiska transaktioner, eller som ändrar eller raderar användarstyrd data i datalagringssystem eller tar emot användarens provsvar, så ska minst en av följande punkter gälla:",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Förslag vid felhantering",
+                        "context": "Om ett inmatningsfel upptäcks automatiskt och det finns kända korrigeringsförslag så ges förslagen till användaren, utom om det skulle äventyra säkerheten eller syftet med innehållet.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Förebyggande av fel (juridiskt, ekonomiskt, data)",
+                        "context": "För webbsidor som leder till att användare ingår rättsliga åtaganden eller utför ekonomiska transaktioner, eller som ändrar eller raderar användarstyrd data i datalagringssystem eller tar emot användarens provsvar, så ska minst en av följande punkter gälla:",
+                        "category": "AAA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Robust",
+        "fragment": "robust",
+        "context": "Innehåll måste vara robust nog för att kunna tolkas på ett pålitligt sätt av ett brett spektrum av olika användarprogram, inklusive hjälpmedel.",
+        "sections": [
+            {
+                "title": "Kompatibelt",
+                "fragment": "kompatibelt",
+                "context": "Maximera kompatibiliteten med nuvarande och framtida användarprogram, inklusive hjälpmedel.",
+                "subsections": [
+                    {
+                        "title": "Parsing",
+                        "context": "Innehåll som skapats med kodspråk (markup language) har element med kompletta start- och sluttaggar. Elementen är nästlade enligt deras specifikationer. De innehåller inte dubbla attributangivelser och har unika ID:n - förutom då specifikationerna tillåter detta.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Namn, roll, värde",
+                        "context": "För alla komponenter i ett användargränssnitt (inklusive, men inte begränsat till formulärelement, länkar och komponenter skapade med script), kan namnet och rollen automatiskt tydliggöras. Status, egenskaper och värden som kan anges av användaren kan bli automatiskt tydliggjord, och meddelande om ändringar i dessa komponenter finns åtkomliga för användarprogram, inklusive hjälpmedel.",
+                        "category": "A"
                     }
                 ]
             }
