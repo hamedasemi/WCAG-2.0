@@ -1,16 +1,11 @@
 <article>
   <header>
-    <select (change)="onChangeCetgory($event)">
-      <option>{{'INTERFACES_NONE' | translate}}</option>
-      <option value="A">A</option>
-      <option value="AA">AA</option>
-      <option value="AAA">AAA</option>
-    </select>
+    
     <input (input)="search($event)" type="search" placeholder="{{'INTERFACES_SEARCH' | translate}}">
     <nav>
       <ul>
         <li *ngFor="let section of article">
-          <a>{{section.title}}</a>
+          <h1>{{section.title}}</h1>
           <ul>
             <li *ngFor="let section of section.sections">
               <a href="#{{section.fragment}}">{{section.title}}</a>
@@ -19,12 +14,20 @@
         </li>
       </ul>
     </nav>
+    <br><br><br>
+    <select (change)="onChangeCetgory($event)">
+      <option value>{{'INTERFACES_NONE' | translate}}</option>
+      <option value="A">A</option>
+      <option value="AA">AA</option>
+      <option value="AAA">AAA</option>
+    </select>
+    <br>
     <select (change)="onChangeLanguage($event)">
       <option value="en">EN</option>
       <option value="sv">SV</option>
     </select>
   </header>
-  
+    
   <section>
     <section *ngFor="let section of article; let i = index">
       <h2>{{i+1}}.{{section.title}}</h2>

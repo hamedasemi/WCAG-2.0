@@ -3,7 +3,7 @@ section {
 }
 
 section section {
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 }
 
 span {
@@ -11,6 +11,7 @@ span {
     position: absolute;
     right: 100%;
     padding: .25rem;
+    margin-right: 2rem;
 }
 
 article {
@@ -27,15 +28,16 @@ article > header {
     flex-direction: column;
     flex-grow: 1;
     padding: 3rem;
-    background: #D3D3D3;
+    color: white;
+    background: #2E2E2E;
 }
 
 article > section {
     padding-left: 0;
-    max-height: calc(100vh - 8rem);
+    max-height: calc(100vh - 12rem);
     background: #FFFFFF;
     overflow: auto;
-    padding: 4rem;
+    padding: 6rem;
 }
 
 li{
@@ -46,7 +48,11 @@ ul, li {
     padding: 0
 }
 
-ul ul a {
+/* nav > ul {
+    padding
+} */
+
+ul  a {
     display: block;
     padding: .5rem;
     color: white;

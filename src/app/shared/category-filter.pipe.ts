@@ -6,9 +6,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class CategoryFilterPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
-    return args ? value.filter((item: any) => {
-      return item.category === args
-    }) : value;
+    console.log('value', value)
+    console.log('value', args)
+    return args ? value.filter((item: any) => { return item.category === args }) : value;
   }
 
 }
