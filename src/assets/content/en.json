@@ -65,9 +65,19 @@
                 "context": "Make all functionality available from a keyboard.",
                 "subsections": [
                     {
-                        "title": "",
-                        "context": "",
-                        "category": ""
+                        "title": "Keyboard",
+                        "context": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.",
+                        "category": "A"
+                    }
+,                    {
+                        "title": "No keyboard trap",
+                        "context": "If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.",
+                        "category": "A"
+                    }
+,                    {
+                        "title": "Keyboard (No Exception)",
+                        "context": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.",
+                        "category": "AAA"
                     }
                 ]
             },
@@ -77,9 +87,29 @@
                 "context": "Provide users enough time to read and use content.",
                 "subsections": [
                     {
-                        "title": "",
-                        "context": "",
-                        "category": ""
+                        "title": "Timing Adjustable",
+                        "context": "For each time limit that is set by the content, at least one of the following is true:",
+                        "category": "A"
+                    }
+,                    {
+                        "title": "Pause, Stop, Hide",
+                        "context": "For moving, blinking, scrolling, or auto-updating information, all of the following are true:",
+                        "category": "A"
+                    }
+,                    {
+                        "title": "No Timing",
+                        "context": "Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.",
+                        "category": "??????"
+                    }
+,                    {
+                        "title": "Interruptions",
+                        "context": "Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency.",
+                        "category": "AAA"
+                    }
+,                    {
+                        "title": "Re-authenticating",
+                        "context": "When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.",
+                        "category": "AAA"
                     }
                 ]
             },
@@ -89,9 +119,14 @@
                 "context": "Do not design content in a way that is known to cause seizures.",
                 "subsections": [
                     {
-                        "title": "",
-                        "context": "",
-                        "category": ""
+                        "title": "Three Flashes or Below Threshold",
+                        "context": "Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Three Flashes",
+                        "context": "Web pages do not contain anything that flashes more than three times in any one second period.",
+                        "category": "AAA"
                     }
                 ]
             },
@@ -101,9 +136,54 @@
                 "context": "Provide ways to help users navigate, find content, and determine where they are.",
                 "subsections": [
                     {
-                        "title": "",
-                        "context": "",
-                        "category": ""
+                        "title": "Bypass Blocks",
+                        "context": "A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Page Titled",
+                        "context": "Web pages have titles that describe topic or purpose.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Focus Order",
+                        "context": "If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Link Purpose (In Context)",
+                        "context": "The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.",
+                        "category": "A"
+                    },
+                    {
+                        "title": "Multiple Ways",
+                        "context": "More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Headings and Labels",
+                        "context": "Headings and labels describe topic or purpose.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Focus Visible",
+                        "context": "Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.",
+                        "category": "AA"
+                    },
+                    {
+                        "title": "Location",
+                        "context": "Information about the user's location within a set of Web pages is available.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Link Purpose (Link Only)",
+                        "context": "A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.",
+                        "category": "AAA"
+                    },
+                    {
+                        "title": "Section Headings",
+                        "context": "Section headings are used to organize the content.",
+                        "category": "AAA"
                     }
                 ]
             }
@@ -207,13 +287,13 @@
                         "title": "Error Prevention (Legal, Financial, Data)",
                         "context": "For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true: ",
                         "category": "AA"
-                    }
-,                    {
+                    },
+                    {
                         "title": "Help",
                         "context": "Context-sensitive help is available.",
                         "category": "AAA"
-                    }
-,                    {
+                    },
+                    {
                         "title": "Error Prevention (All)",
                         "context": "For Web pages that require the user to submit information, at least one of the following is true:",
                         "category": "AAA"

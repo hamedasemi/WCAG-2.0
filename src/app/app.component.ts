@@ -36,7 +36,6 @@ export class AppComponent implements OnInit {
 
   getContent() {
     this.contentService.getConetnt(this.language).subscribe((content: Response) => {
-      console.log(content)
       this.article = content;
     });
   }
