@@ -19,10 +19,9 @@ article {
     background: #F0F0F0;
     color: black;
     font-family: Helvetica, sans-serif;
-
 }
 
-article > header {
+article>header {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -32,7 +31,7 @@ article > header {
     background: #2E2E2E;
 }
 
-article > section {
+article>section {
     padding-left: 0;
     max-height: calc(100vh - 12rem);
     background: #FFFFFF;
@@ -40,19 +39,21 @@ article > section {
     padding: 6rem;
 }
 
-li{
+li {
     list-style: none;
 }
 
-ul, li {
+ul,
+li {
     padding: 0
 }
+
 
 /* nav > ul {
     padding
 } */
 
-ul  a {
+ul a {
     display: block;
     padding: .5rem;
     color: white;
@@ -63,3 +64,12 @@ ul ul a:hover {
     background: #EEEEEE;
 }
 
+@keyframes hightlight {
+    from {
+        background: #F0F086;
+    }
+}
+
+.active {
+    animation: 2s ease-out hightlight;
+}

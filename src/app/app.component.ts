@@ -9,11 +9,13 @@ import { ContentService } from './shared/content.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  
+
   article: Response;
   term: string;
   category: string;
   language: string = 'en';
+
+  @ViewChild('articleRef') articleRef: any;
 
   constructor(public translate: TranslateService, public contentService: ContentService) {
     this.translate.addLangs(['en', 'sv']);
@@ -42,5 +44,19 @@ export class AppComponent implements OnInit {
 
   search(event: any) {
     this.term = event.target.value;
+  }
+
+  hightlightHeader(event: any) {
+    let fragment = event.target.href.split('#')[1];
+    [].slice.call(this.article).map((sections: any) => {
+      [].slice.call(sections.sections).map((section: any) => {
+        if (section.fragment === fragment) {
+          section.active = true;
+        }else {
+          section.active = false;
+        }
+      });
+    });
+    console.log()
   }
 }

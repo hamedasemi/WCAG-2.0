@@ -1,27 +1,22 @@
-[
-    {
+[{
         "title": "Perceivable",
         "fragment": "perceivable",
         "context": "Information and user interface components must be presentable to users in ways they can perceive.",
-        "sections": [
-            {
+        "sections": [{
                 "title": "Text alternatives",
                 "fragment": "text-alternatives",
                 "context": "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
-                "subsections": [
-                    {
-                        "title": "Non-text content",
-                        "context": "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.",
-                        "category": "A"
-                    }
-                ]
+                "subsections": [{
+                    "title": "Non-text content",
+                    "context": "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.",
+                    "category": "A"
+                }]
             },
             {
                 "title": "Time-based Media",
                 "fragment": "time-based-media",
                 "context": "Provide alternatives for time-based media.",
-                "subsections": [
-                    {
+                "subsections": [{
                         "title": "Audio-only and Video-only (Prerecorded)",
                         "context": "For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:",
                         "category": "A"
@@ -72,8 +67,7 @@
                 "title": "Adaptable",
                 "fragment": "adaptable",
                 "context": "Create content that can be presented in different ways (for example simpler layout) without losing information or structure.",
-                "subsections": [
-                    {
+                "subsections": [{
                         "title": "Info and Relationships",
                         "context": "Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.",
                         "category": "A"
@@ -94,8 +88,7 @@
                 "title": "Distinguishable",
                 "fragment": "distinguishable",
                 "context": "Make it easier for users to see and hear content including separating foreground from background.",
-                "subsections": [
-                    {
+                "subsections": [{
                         "title": "Use of Color",
                         "context": "Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.",
                         "category": "A"
@@ -148,13 +141,11 @@
         "title": "Operable",
         "fragment": "operable",
         "context": "User interface components and navigation must be operable.",
-        "sections": [
-            {
+        "sections": [{
                 "title": "Keyboard Accessible",
                 "fragment": "keyboard-accessible",
                 "context": "Make all functionality available from a keyboard.",
-                "subsections": [
-                    {
+                "subsections": [{
                         "title": "Keyboard",
                         "context": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.",
                         "category": "A"
@@ -173,10 +164,9 @@
             },
             {
                 "title": "Enough Time",
-                "fragment": "nnough-time",
+                "fragment": "enough-time",
                 "context": "Provide users enough time to read and use content.",
-                "subsections": [
-                    {
+                "subsections": [{
                         "title": "Timing Adjustable",
                         "context": "For each time limit that is set by the content, at least one of the following is true:",
                         "category": "A"
@@ -207,8 +197,7 @@
                 "title": "Seizures",
                 "fragment": "seizures",
                 "context": "Do not design content in a way that is known to cause seizures.",
-                "subsections": [
-                    {
+                "subsections": [{
                         "title": "Three Flashes or Below Threshold",
                         "context": "Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.",
                         "category": "A"
@@ -224,8 +213,7 @@
                 "title": "Navigable",
                 "fragment": "navigable",
                 "context": "Provide ways to help users navigate, find content, and determine where they are.",
-                "subsections": [
-                    {
+                "subsections": [{
                         "title": "Bypass Blocks",
                         "context": "A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.",
                         "category": "A"
@@ -283,13 +271,11 @@
         "title": "Understandable",
         "fragment": "understandable",
         "context": "Information and the operation of user interface must be understandable.",
-        "sections": [
-            {
+        "sections": [{
                 "title": "Readable",
                 "fragment": "readable",
                 "context": "Make text content readable and understandable.",
-                "subsections": [
-                    {
+                "subsections": [{
                         "title": "1 Language of Page",
                         "context": "The default human language of each Web page can be programmatically determined.",
                         "category": "A"
@@ -325,8 +311,7 @@
                 "title": "Predictable",
                 "fragment": "predictable",
                 "context": "Make Web pages appear and operate in predictable ways.",
-                "subsections": [
-                    {
+                "subsections": [{
                         "title": "On Focus",
                         "context": "When any component receives focus, it does not initiate a change of context.",
                         "category": "A"
@@ -357,8 +342,7 @@
                 "title": "Input Assistance",
                 "fragment": "input-assistance",
                 "context": "Help users avoid and correct mistakes.",
-                "subsections": [
-                    {
+                "subsections": [{
                         "title": "Error Identification",
                         "context": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
                         "category": "A"
@@ -396,24 +380,21 @@
         "title": "Robust",
         "fragment": "robust",
         "context": "Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.",
-        "sections": [
-            {
-                "title": "Compatible",
-                "fragment": "compatible",
-                "context": "Maximize compatibility with current and future user agents, including assistive technologies.",
-                "subsections": [
-                    {
-                        "title": "Parsing",
-                        "context": "In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.",
-                        "category": "A"
-                    },
-                    {
-                        "title": "Name, Role, Value",
-                        "context": "For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.",
-                        "category": "A"
-                    }
-                ]
-            }
-        ]
+        "sections": [{
+            "title": "Compatible",
+            "fragment": "compatible",
+            "context": "Maximize compatibility with current and future user agents, including assistive technologies.",
+            "subsections": [{
+                    "title": "Parsing",
+                    "context": "In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.",
+                    "category": "A"
+                },
+                {
+                    "title": "Name, Role, Value",
+                    "context": "For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.",
+                    "category": "A"
+                }
+            ]
+        }]
     }
 ]
