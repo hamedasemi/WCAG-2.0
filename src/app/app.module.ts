@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -13,7 +13,15 @@ import { SearchPipe } from './shared/search.pipe';
 import { HightlightPipe } from './shared/hightlight.pipe';
 import { CategoryFilterPipe } from './shared/category-filter.pipe';
 
-export function translate (http: HttpClient) {
+export function delayFactory() {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      resolve();
+    }, 1000);
+  });
+}
+
+export function translate(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 @NgModule({
@@ -22,7 +30,7 @@ export function translate (http: HttpClient) {
     SearchPipe,
     HightlightPipe,
     CategoryFilterPipe
-  ], 
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -35,7 +43,13 @@ export function translate (http: HttpClient) {
     }),
     FormsModule
   ],
-  providers: [ContentService],
+  providers: [
+    ContentService, {
+      provide: APP_INITIALIZER,
+      useValue: delayFactory,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
