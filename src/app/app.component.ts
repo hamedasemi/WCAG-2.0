@@ -49,6 +49,11 @@ export class AppComponent implements OnInit {
   hightlightHeader(event: any) {
     let fragment = event.target.href.split('#')[1];
     [].slice.call(this.article).map((sections: any) => {
+      if (sections.fragment === fragment) {
+        sections.active = true;
+      }else {
+        sections.active = false;
+      }
       [].slice.call(sections.sections).map((section: any) => {
         if (section.fragment === fragment) {
           section.active = true;

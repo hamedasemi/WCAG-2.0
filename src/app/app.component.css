@@ -49,6 +49,10 @@ li {
     padding: 0
 }
 
+ul ul {
+    padding-left: 1rem;
+}
+
 
 /* nav > ul {
     padding
@@ -60,7 +64,7 @@ ul a {
     color: white;
 }
 
-ul ul a:hover {
+ul a:hover {
     color: black;
     background: #EEEEEE;
 }

@@ -5,7 +5,7 @@
         <nav>
             <ul>
                 <li *ngFor="let section of article">
-                    <h1>{{section.title}}</h1>
+                    <a href="#{{section.fragment}}" (click)="hightlightHeader($event)">{{section.title}}</a>
                     <ul>
                         <li *ngFor="let section of section.sections">
                             <a href="#{{section.fragment}}" (click)="hightlightHeader($event)">{{section.title}}</a>
@@ -29,7 +29,7 @@
     </header>
 
     <section>
-        <section *ngFor="let section of article; let i = index">
+        <section *ngFor="let section of article; let i = index" id="{{section.fragment}}" [class.active]="section.active">
             <h2>{{i+1}}.{{section.title}}</h2>
             <p>{{section.context}}</p>
             <section *ngFor="let section of section.sections; let j = index" id="{{section.fragment}}" [class.active]="section.active">
