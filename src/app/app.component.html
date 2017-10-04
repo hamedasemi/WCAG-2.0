@@ -15,12 +15,12 @@
             </ul>
         </nav>
         <br><br><br>
-        <select (change)="onChangeCetgory($event)">
-      <option value>{{'INTERFACES_NONE' | translate}}</option>
-      <option value="A">A</option>
-      <option value="AA">AA</option>
-      <option value="AAA">AAA</option>
-    </select>
+        <div>
+            <input type="radio" name="category" value checked (change)="onChangeCetgory($event)" id="none"><label for="none">{{'INTERFACES_NONE' | translate}}</label>
+            <input type="radio" name="category" value="A" (change)="onChangeCetgory($event)" id="a"><label for="a">A</label>
+            <input type="radio" name="category" value="AA" (change)="onChangeCetgory($event)" id="aa"><label for="aa">AA</label>
+            <input type="radio" name="category" value="AAA" (change)="onChangeCetgory($event)" id="aaa"><label for="aaa">AAA</label>
+        </div>
         <br>
         <select (change)="onChangeLanguage($event)">
       <option value="en">EN</option>
